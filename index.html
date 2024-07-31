@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number game</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.7.1/core.css">
+
+    <script type="module" src="https://pyscript.net/releases/2024.7.1/core.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="py" src="main.py"> </script>
+</head>
+
+<body>
+
+    <section class="main-area">
+        <h1>The Guess Game</h1>
+
+        <label for="guess" class="guess-label">Guess a number between 1 and 10.</label>
+        <input type="number" id="guess" max="10" min="1" required />
+        <button id="submit">Submit</button>
+        <button id="reset">Reset</button>
+
+        <p id="message">Make a guess!</p>
+        <p id="sofar">Your guesses so far: </br> <span id="guessList">[None]</span></p>
+        <p id="at-left">Attempts Left: <span id="attemptsLeft">4/4</p>
+
+    </section>
+
+</body>
+
+</html>
