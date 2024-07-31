@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    background-color: hsl(0, 100%, 96%);
+    height: 100dvh;
+    margin: 5rem;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+    font-family: Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem hsl(0, 0%, 90%);
+    max-width: 750px;  
+
+}
+
+.main-area {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+ 
+}
+
+.main-area h1 {
+    font-size: 2.5rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.guess-label {
+    display: block;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+
+
+#guess {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+
+
+#submit {
+    grid-column: 1/2;
+    grid-row: 4/4;
+    background-color: hwb(55 91% 4% / 0.582);
+    border-width: 1px;
+    border-radius: 10px;
+   
+}
+
+#reset {
+    grid-column: 2/3;
+    grid-row: 4/4;
+    background-color: hwb(55 91% 4% / 0.582);
+    border-width: 1px;
+    border-radius: 10px;
+  
+   
+}
+
+#message {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    background-color: hwb(55 91% 4% / 0.582);
+    padding: 1rem;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+}
+
+#sofar {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#at-left {
+    grid-column: 3/4;
+    grid-row: 4/4;
+    border-top: 2px solid hwb(55 91% 4% / 0.582);
+    padding-top: 5px;
+}
+
+#guessList {
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .main-area {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr repeat(2, minmax(auto, 2lh)) 2fr 1fr;
+
+    } 
+
+    .main-area h1 {
+        font-size: 2.5rem;
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+    }
+
+    .guess-label {
+        display: block;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+
+
+    #guess {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        max-height: 2.5lh;
+    }
+
+
+
+    #submit {
+        grid-column: 1/2;
+        grid-row: 4/4;
+        max-height: 2lh;
+    }
+
+    #reset {
+        grid-column: 2/3;
+        grid-row: 4/4;
+        max-height: 2lh;
+    }
+
+    #message {
+        grid-column: 1/3;
+        grid-row: 5/6;
+       
+    }
+
+    #sofar {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    #at-left {
+        grid-column: 2/3;
+        grid-row: 6/7;
+        border-top:0;
+        border-left: 2px solid hwb(55 91% 4% / 0.582);
+        padding-top: 0;
+        padding-left: 5px;
+    }
+
+    #guessList {
+        display: inline-block;
+    }
+
+
+}
