@@ -15,4 +15,5 @@ This project is a crude reimagination of the original [MDN Learning Area's Numbe
 
 - [MDN description of the game](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash)
 - [Javascript Github code provided by mdn web docs](https://github.com/mdn/learning-area/tree/main/javascript/introduction-to-js-1/first-splash)
+- [Pscript Docs](https://docs.pyscript.net/2024.7.1/beginning-pyscript/)
 - [PyScript - Why Do We Need create_proxy()?](https://jeff.glass/post/pyscript-why-create-proxy/)
