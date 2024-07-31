@@ -1,0 +1,6 @@
+name = "PyScript Number Guessing Game"
+description = "A simple game to guess the number between 1 and 10 in four attempts. 
+This is a coding exercise from mdn web docs https://github.com/mdn/learning-area/blob/main/javascript/introduction-to-js-1/first-splash/number-guessing-game-start.html
+reimagined using pyscript."
+
+packages = ["random","pyodide"]
