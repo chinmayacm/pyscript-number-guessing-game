@@ -54,8 +54,21 @@ body {
     grid-row: 3/4;
     border-radius: 10px;
     border-width: 1px;
+    text-align: center;
+    outline: none;
 }
 
+#guess:focus:not(:valid) {
+    outline-width: .5px;
+    outline-style: solid;
+    outline-color: hwb(18 0% 0%);
+}
+
+#guess:focus:valid {
+    outline-width: .5px;
+    outline-style: solid;
+    outline-color: hwb(111 1% 0%);
+}
 
 
 #submit {
